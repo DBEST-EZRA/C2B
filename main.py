@@ -6,8 +6,8 @@ import base64
 
 
 class MpesaC2bCredential:
-    consumer_key = 'AqMIux0qLIIbZtGh5cBm3cqhtKfyZx22ScWW4A4utPPEturA'
-    consumer_secret = 'UUkorbR2oGPNWxj4NBlb7LHM6f8rRlxb0HZr0IqL0zAJxW1nFHkJ2V7NQsR41O4b'
+    consumer_key = 'add yours'
+    consumer_secret = 'add yours'
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
 
@@ -32,8 +32,8 @@ class LipanaMpesaPpassword:
 
 # PART TWO
 def generate_token():
-    consumer_key = 'AqMIux0qLIIbZtGh5cBm3cqhtKfyZx22ScWW4A4utPPEturA'
-    consumer_secret = 'UUkorbR2oGPNWxj4NBlb7LHM6f8rRlxb0HZr0IqL0zAJxW1nFHkJ2V7NQsR41O4b'
+    consumer_key = 'add yours'
+    consumer_secret = 'add yours'
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
     r = requests.get(api_URL, auth=HTTPBasicAuth(consumer_key, consumer_secret))
