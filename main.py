@@ -6,8 +6,8 @@ import base64
 
 
 class MpesaC2bCredential:
-    consumer_key = 'WHtnvXGZfjVqMeUY0LAWJgGxdMrojADoCPwABIj112ihKTmu'
-    consumer_secret = 'Dh30HGJ9XG61n9fPyKIqbTCslqYZdTfnsKOpoe0mFHaPU3GTGWDIytBsZCOmQrxF'
+    consumer_key = 'AqMIux0qLIIbZtGh5cBm3cqhtKfyZx22ScWW4A4utPPEturA'
+    consumer_secret = 'UUkorbR2oGPNWxj4NBlb7LHM6f8rRlxb0HZr0IqL0zAJxW1nFHkJ2V7NQsR41O4b'
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
 
@@ -32,8 +32,8 @@ class LipanaMpesaPpassword:
 
 # PART TWO
 def generate_token():
-    consumer_key = '77bgGpmlOxlgJu6oEXhEgUgnu0j2WYxA'
-    consumer_secret = 'viM8ejHgtEmtPTHd'
+    consumer_key = 'AqMIux0qLIIbZtGh5cBm3cqhtKfyZx22ScWW4A4utPPEturA'
+    consumer_secret = 'UUkorbR2oGPNWxj4NBlb7LHM6f8rRlxb0HZr0IqL0zAJxW1nFHkJ2V7NQsR41O4b'
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
     r = requests.get(api_URL, auth=HTTPBasicAuth(consumer_key, consumer_secret))
@@ -61,8 +61,8 @@ def stk_push():
         "PartyB": LipanaMpesaPpassword.Business_short_code,
         "PhoneNumber": phone,
         "CallBackURL": "https://sandbox.safaricom.co.ke/mpesa/",
-        "AccountReference": "eMobilis",
-        "TransactionDesc": "Web Development Charges"
+        "AccountReference": "Beta Designs",
+        "TransactionDesc": "Development Charges"
     }
     response = requests.post(api_url, json=payload, headers=headers)
     print(f"Response: {response.text}")
